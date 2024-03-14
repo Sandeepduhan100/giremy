@@ -18,7 +18,7 @@ const checkIsChapterCompleted=(chapterId)=>{
         <h2>Contents</h2>
      {
         courseInfo.chapter?.map((item,index)=>(
-            <div>
+            <div key={index}>
                 <h2 className={`p-2 text-[14px] flex justify-between 
                 border rounded-sm px-4 m-2 hover:bg-gray-200 
                 hover:text-gray-500 cursor-pointer items-center

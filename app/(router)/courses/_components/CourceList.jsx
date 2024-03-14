@@ -45,8 +45,8 @@ function CourceList() {
             <div className='grid grid-cols-2 lg:grid-cols-3 gap-3  '>
                 {
                     courseList?.length > 0 ? courseList.map((item, index) => (
-                        <Link href={'/course-preview/'+item.slug}>
-                            <div key={index}>
+                        <Link href={'/course-preview/'+item.slug} key={index}>
+                            <div >
 
                                 <CourseItem course={item} />
                             </div>
